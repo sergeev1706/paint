@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- для сохранения PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+</head>
+
+<body>
+
+  <!-- <button id="clear">clear</button> -->
+  <canvas class="canvas" id="canvas"></canvas>
+  <button id="download">download</button>
+  <p id="leftDistance" class="disable"></p>
+  <p id="rightDistance" class="disable"></p>
+  <p id="topDistance" class="disable"></p>
+  <p id="bottomDistance" class="disable"></p>
+  <input class="width" id="width" value="600"><br /><br />
+  <input class="height" id="height" value="600"><br /><br />
+  <input class="base" id="base" value="20"><br /><br />
+  <input class="partition" id="partition" value="10"><br /><br />
+  <button id="start">start</button>
+
+  <script src="./start.js"></script>
+  <script src="./initWalls.js"></script>
+  <script src="./mousemove.js"></script>
+  <script src="./move.js"></script>
+  <script src="./removeLast.js"></script>
+  <script src="./addWall.js"></script>
+  <script src="./functions.js"></script>
+  <script src="./save.js"></script>
+
+</body>
+
+</html>
